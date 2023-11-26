@@ -14,7 +14,6 @@ export const lightTheme = {
     'background-selected': 'rgb(240, 247, 255)',
 
     'primary-100': '#E7EBF0',
-    // 'primary-300': '#CDD2D7',
 
     card: '#fff',
 
