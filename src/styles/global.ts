@@ -17,7 +17,7 @@ export const GlobalStyle = createGlobalStyle`
   *, input, button {
     border: 0;
     background: none;
-    font-family: "IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-family: "IBM Plex Sans";
     font-weight: 500;
     font-size: 1rem;
     line-height: 1.5;

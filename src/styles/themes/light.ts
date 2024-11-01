@@ -19,7 +19,7 @@ export const lightTheme = {
 
     'text-primary': '#1A2027',
     'text-secondary': '#3E5060',
-    'text-terciary': 'rgb(0, 127, 255)',
+    'text-tertiary': 'rgb(0, 127, 255)',
 
     hover: '#F3F6F9',
     'hover-selected': 'rgba(0, 127, 255, 0.12)',

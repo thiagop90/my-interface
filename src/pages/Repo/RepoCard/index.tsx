@@ -1,8 +1,8 @@
-import { Route } from '@mui/icons-material'
 import React from 'react'
 import { Link } from 'react-router-dom'
 
 import { Container, Topside, Botside } from './styles'
+import { GitHub, Route } from '@mui/icons-material'
 
 interface Props {
   username: string
@@ -39,10 +39,17 @@ export const RepoCard: React.FC<Props> = ({
           <span>{language}</span>
         </div>
 
-        <Link to={`${homepage}`} target={'_blank'}>
-          Deploy
-          <Route fontSize="small" />
-        </Link>
+        {homepage ? (
+          <Link to={`${homepage}`} target={'_blank'}>
+            Website
+            <Route className="icon" />
+          </Link>
+        ) : (
+          <Link to={`${homepage}`} target={'_blank'}>
+            Código Fonte
+            <GitHub className="icon" />
+          </Link>
+        )}
       </Botside>
     </Container>
   )

@@ -61,6 +61,8 @@ export const Repo: React.FC = () => {
     </div>
   )
 
+  console.log(data)
+
   return (
     <Container>
       <Tab>

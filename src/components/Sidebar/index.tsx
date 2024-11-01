@@ -11,6 +11,10 @@ export const Sidebar: React.FC = () => {
 
   return (
     <>
+      <Overlay
+        onClick={toggleSidebar}
+        className={`${isOpen ? 'isOpenOverlay' : ''}`}
+      />
       <SidebarContainer className={`${isOpen ? 'isOpen' : ''}`}>
         <header>
           <span>Settings</span>
@@ -40,10 +44,6 @@ export const Sidebar: React.FC = () => {
           </ToggleButtonGroup>
         </section>
       </SidebarContainer>
-      <Overlay
-        onClick={toggleSidebar}
-        className={`${isOpen ? 'isOpenOverlay' : ''}`}
-      />
     </>
   )
 }

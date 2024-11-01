@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components'
 
 export const Container = styled.div`
-  position: relative;
+  position: sticky;
   top: 0;
   width: 100%;
   display: flex;
@@ -10,11 +10,12 @@ export const Container = styled.div`
   background: var(--header);
   backdrop-filter: blur(8px);
   box-shadow: inset 0px -1px 1px var(--primary-100);
+  z-index: 50;
 `
 
 export const HeaderContainer = styled.header`
   width: 100%;
-  max-width: 80rem;
+  max-width: 64rem;
   display: flex;
   align-items: center;
   justify-content: space-between;

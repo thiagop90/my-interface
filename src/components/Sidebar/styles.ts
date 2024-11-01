@@ -9,7 +9,7 @@ export const SidebarContainer = styled.aside`
   background: var(--primary);
   border-left: 1px solid var(--border);
   border-radius: 10px 0 0 10px;
-  z-index: 2;
+  z-index: 50;
   translate: 22.5rem 0;
   transition: translate 0.3s;
 
@@ -78,7 +78,7 @@ export const ToggleButtonGroup = styled.button`
     }
 
     &.isSelected {
-      color: var(--text-terciary);
+      color: var(--text-tertiary);
       background: var(--background-selected);
       border-color: var(--border-selected);
 
@@ -91,7 +91,7 @@ export const ToggleButtonGroup = styled.button`
 
 export const Overlay = styled.div`
   position: fixed;
-  z-index: 1;
+  z-index: 50;
   width: 100vw;
   height: 100vh;
   background: rgba(0, 0, 0, 0.5);

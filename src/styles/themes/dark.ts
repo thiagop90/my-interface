@@ -19,7 +19,7 @@ export const darkTheme = {
 
     'text-primary': '#fff',
     'text-secondary': '#B2BAC2',
-    'text-terciary': '#fff',
+    'text-tertiary': '#fff',
 
     hover: 'rgba(19, 47, 76, 0.4)',
     'hover-selected': 'rgb(23, 58, 94)',

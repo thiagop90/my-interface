@@ -7,7 +7,7 @@ export const Container = styled.div`
   justify-content: space-between;
   background: var(--card);
   border: 1px solid var(--border-2);
-  border-radius: 10px;
+  border-radius: 16px;
   transition: transform 0.3s, border 0.3s;
 
   &:hover,
@@ -76,8 +76,8 @@ export const Botside = styled.div`
     gap: 0.5rem;
 
     .language {
-      width: 0.75rem;
-      height: 0.75rem;
+      width: 0.625rem;
+      height: 0.625rem;
       border-radius: 50%;
 
       &.css {
@@ -93,7 +93,7 @@ export const Botside = styled.div`
 
     > span {
       font-size: 0.875rem;
-      font-weight: 400;
+      font-weight: 500;
       color: var(--text-primary);
     }
   }
@@ -106,14 +106,23 @@ export const Botside = styled.div`
     color: var(--white);
     text-decoration: none;
     font-family: 'Plus Jakarta Sans', sans-serif;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     /* font-weight: 600; */
     padding: 0.5rem 0.75rem;
-    border-radius: 6px;
+    border-radius: 12px;
     transition: all 0.2s ease;
+
+    &.disabled {
+      opacity: 0.5;
+    }
 
     &:hover {
       background-color: ${blue[600]};
+    }
+
+    .icon {
+      width: 1rem;
+      height: 1rem;
     }
   }
 `

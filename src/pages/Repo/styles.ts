@@ -7,7 +7,7 @@ export const Main = styled.main`
   flex-direction: column;
   gap: 1rem;
   width: 100%;
-  max-width: 80rem;
+  max-width: 64rem;
   margin: 0 auto;
   padding: 1rem 1.5rem;
 
@@ -22,28 +22,30 @@ export const Repos = styled.div`
   /* grid-auto-columns: minmax(500px, auto);a */
   gap: 1rem;
 
-  @media (min-width: 480px) {
+  @media (min-width: 640px) {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     grid-template-columns: repeat(3, 1fr);
   }
 `
+
 export const Tab = styled.div`
   width: 100%;
   position: sticky;
-  top: 0;
+  top: 4.375rem;
   background: var(--header);
   backdrop-filter: blur(8px);
   box-shadow: inset 0px -1px 1px var(--primary-100);
+  z-index: 10;
 
   .wrapper {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
     width: 100%;
-    max-width: 80rem;
+    max-width: 64rem;
     padding: 0 1.5rem;
 
     .profile {
